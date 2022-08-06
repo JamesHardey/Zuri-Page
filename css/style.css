@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffefe;
+}
+
+.max-width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo span{
+    color: red;
+    font-size: 26px;
+}
+
+.link{
+    color: red;
+}
+
+
+header {
+    background-image: url(https://zuri.team/img/hero-bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+.btns {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.top-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.top-page h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 3rem auto;
+}
+
+.top-page h2 {
+    font-size: 2rem;
+    margin: 2rem auto;
+    font-weight: 700;
+}
+
+.top-page p {
+    max-width: 700px;
+    line-height: 1.5em;
+    margin: 2rem auto;
+}
+
+.top-page .top-btn {
+    border: .12rem solid red;
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.first-btn {
+    color: #fff;
+    background-color: red;
+    transition: all 0.3s ease;
+}
+
+.first-btn:hover {
+    color: red;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.sec-btn {
+    color: red;
+    background-color: none;
+    transition: all 0.3s ease;
+}
+
+.sec-btn:hover {
+    color: #fff;
+    background-color: red;
+    transition: all 0.3s ease;
+}
+
+
+/* middle-page */
+
+.middle-page {
+    height: fit-content;
+    line-height: 1.5em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.middle-page .top-middle-page {
+    text-align: center;
+    width: 40vw;
+    min-width: 250px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.top-middle-page h6{
+    color: red;
+    font-size: 1rem;
+}
+
+.top-middle-page p{
+    color: gray;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    
+}
+
+.middle-page h6,
+.middle-page p {
+    text-align: center;
+    margin: 30px auto;
+}
+
+
+.middle-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.middle-2 div {
+    min-height: 200px;
+}
+
+.middle-2 p {
+    margin: 20px auto;
+    text-align: left;
+}
+
+.middle-2 a {
+    color: red;
+    font-size: .9rem;
+}
+
+
+.zuri-card {
+    padding: 80px 50px;
+    padding-top: 70px;
+    background-color: #e83e8c09;
+}
+
+.zuri-card .card-content {
+    line-height: 2em;
+    min-height: 450px;
+}
+
+
+/* footer-section */
+
+.last-section {
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+
+.links-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.links-container a,
+.contact-container a{
+    color: red;
+}
+
+.contact-container p{
+    width: 270px;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.foot-container h4{
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+.foot-container h6{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.foot-container img{
+    width: 20px !important;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+    background-color: #6c757d;
+}
+
+
+.bottom-container{
+    margin: 20px 0;
+}
+
+
+.bottom-container p{
+    text-align: center;
+}
+
+
+
+@media (max-width: 867px) {
+
+    .foot-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .foot-container .flex-item{
+        justify-content: center;
+    }
+
+    .contact-container p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 668px) {
+
+    .btns{
+        flex-direction: column;
+    }
+    .top-btn{
+        flex: 100%;
+    }
+}
