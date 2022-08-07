@@ -12,12 +12,17 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    line-height: 1.6em;
 }
 
 .max-width{
     max-width: 1300px;
     margin: auto;
-    padding: 0 40px;
+    padding: 0 60px;
+}
+
+.dark-grey{
+    color: rgb(110, 110, 110);
 }
 
 header{
@@ -69,8 +74,270 @@ header{
 
 .land-page-content{
     display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
 }
 
-.land-page-item{
-    flex: 50%;
+.land-page-item-1{
+    flex: 60%;
 }
+
+.land-page-item-2{
+    flex: 40%;
+    position: relative;
+}
+
+
+
+.land-page-content .land-page-image{
+    text-align: end;
+}
+
+.land-page-content .land-page-image img{
+    max-width: 350px;
+    width: 100%;
+
+}
+
+.land-page-text{
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.land-page-text h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.rel-img{
+    text-align: end;
+}
+
+.rel-img img{
+    height: 30px;
+}
+
+.land-page-text p{
+    margin: 20px 0 40px;
+    color: darkgrey;
+}
+
+
+.land-page-text span, .impact-section span{
+    color: red;
+}
+
+.btn-container{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn1,.btn2{
+    padding: 5px 13px;
+    width: 160px;
+    background-color: red;
+    color: #fff;
+    border-bottom-right-radius: 7px ;
+    text-align: center;
+}
+
+.btn2{
+    background-color: rgb(110, 110, 110);
+}
+
+/* End of Land page */
+
+
+.impact-section{
+    background-image: url("/images/bg2.png");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.impact-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.impact-content-text{
+    flex: 60%;
+    padding-right: 30px;
+}
+
+.impact-content-text h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.right-image{
+    flex: 35%;
+}
+
+.right-image img{
+    width: 100%;
+    min-width: 200px;
+}
+
+.country-cards{
+    display: flex;
+    gap: 10px;
+}
+
+.country-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.country-card img{
+    width: 40px;
+    height: 40px;
+}
+
+/* End of impact section */
+
+/* Start of why-us-section */
+.why-us-section{
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.list-stacks,
+.talent-list{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.stack{
+    padding: 8px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    color: rgb(110, 110, 110);
+    font-size: 17px;
+}
+
+
+.wus-header{
+    line-height: 1.8em;
+}
+
+.wus-header h2{
+    font-size: 2.3rem;
+    line-height: 1.4em;
+    margin: 20px 0;
+}
+
+/* End of why-us-section */
+
+/* Why Hire us section */
+
+.wh-talent{
+    background-color: rgb(250, 241, 217);
+    padding: 100px 0;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+
+.wh-content h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 50px 0;
+    font-weight: 500;
+    color: grey;
+}
+
+.card{
+    background-color: #fff;
+    box-sizing: 5px 5px 5px rgba(0 0 0 0.2);
+    padding:30px;
+    width: 30%;
+    min-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+.card img{
+    width: 80px;
+    margin: 10px 0;
+}
+
+.align-center{
+    display: flex;
+    justify-content: center;
+}
+
+/* End of why hire us section */
+
+
+
+/* Footer */
+
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20vw;
+    row-gap: 40px;
+}
+
+.footer-copy{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(223, 215, 215);
+}
+
+.social-content{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+
+.social-content img{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-content p{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(240, 239, 239);
+    text-align: end;
+}
+
+
+
+/* End of footer */
